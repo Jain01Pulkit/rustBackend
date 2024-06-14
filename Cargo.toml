@@ -1,0 +1,19 @@
+[package]
+name = "hello-rocket"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = {version="0.5.1",features=["json"]}
+dotenv = "0.15.0"
+serde = "1.0.136"
+uuid = "1.8.0"
+
+[dependencies.rocket_db_pools]
+version = "0.2.0"
+features = ["sqlx_mysql"]
+
+[dependencies.sqlx]
+version = "0.7"
+default-features = false
+features = ["macros", "migrate","runtime-tokio-rustls"]

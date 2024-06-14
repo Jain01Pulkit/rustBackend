@@ -1,0 +1,9 @@
+[default.databases.exampleDB]
+url = "mysql://Pulkit:Admin@123@localhost:3306/exampleDB"
+
+
+# Only `url` is required. These have sane defaults and are optional.
+min_connections = 64
+max_connections = 1024
+connect_timeout = 5
+idle_timeout = 120
